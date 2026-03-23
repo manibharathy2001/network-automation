@@ -1,0 +1,126 @@
+Building configuration...
+
+Current configuration : 1602 bytes
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+!
+hostname R4
+!
+boot-start-marker
+boot-end-marker
+!
+!
+enable secret 5 $1$D2IL$GtWl6Snas5EgjTTfDos6K1
+!
+no aaa new-model
+no ip icmp rate-limit unreachable
+ip cef
+!
+!
+!
+!
+!
+!
+no ip domain lookup
+ip domain name lab.local
+no ipv6 cef
+!
+!
+mpls label protocol ldp
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+username admin privilege 15 secret 5 $1$.IVn$jhysMvSQPQsYYWwRmwF4I0
+!
+!
+ip tcp synwait-time 5
+ip ssh version 2
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 4.4.4.4 255.255.255.255
+ ip router isis 
+!
+interface FastEthernet0/0
+ no ip address
+ shutdown
+ duplex full
+!
+interface FastEthernet1/0
+ no ip address
+ shutdown
+ duplex full
+!
+interface GigabitEthernet2/0
+ ip address 10.0.34.1 255.255.255.0
+ ip router isis 
+ negotiation auto
+ mpls ip
+!
+interface GigabitEthernet3/0
+ ip address 10.0.41.2 255.255.255.0
+ ip router isis 
+ negotiation auto
+ mpls ip
+!
+interface GigabitEthernet4/0
+ ip address 192.168.95.14 255.255.255.0
+ negotiation auto
+!
+interface GigabitEthernet5/0
+ no ip address
+ shutdown
+ negotiation auto
+!
+router isis
+ net 49.0001.0000.0000.0004.00
+ is-type level-2-only
+ metric-style wide
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+ip route 0.0.0.0 0.0.0.0 192.168.95.1
+!
+!
+mpls ldp router-id Loopback0 force
+!
+!
+control-plane
+!
+!
+line con 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+ stopbits 1
+line aux 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+ stopbits 1
+line vty 0 4
+ login local
+ transport input ssh
+!
+!
+end

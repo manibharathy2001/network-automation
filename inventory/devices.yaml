@@ -1,0 +1,32 @@
+devices:
+  - name: R1
+    ip: 192.168.95.11
+    username: admin
+    password: admin123
+    device_type: cisco_ios
+    interface: GigabitEthernet2/0
+    metric: 50
+
+  - name: R2
+    ip: 192.168.95.12
+    username: admin
+    password: admin123
+    device_type: cisco_ios
+    interface: GigabitEthernet2/0
+    metric: 50
+
+  - name: R3
+    ip: 192.168.95.13
+    username: admin
+    password: admin123
+    device_type: cisco_ios
+    interface: GigabitEthernet2/0
+    metric: 50
+
+  - name: R4
+    ip: 192.168.95.14
+    username: admin
+    password: admin123
+    device_type: cisco_ios
+    interface: GigabitEthernet3/0
+    metric: 50
