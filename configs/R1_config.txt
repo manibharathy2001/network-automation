@@ -1,0 +1,45 @@
+hostname R1
+no ip domain-lookup
+
+username admin privilege 15 secret admin123
+enable secret cisco123
+ip domain-name lab.local
+crypto key generate rsa modulus 1024
+ip ssh version 2
+
+line vty 0 4
+ login local
+ transport input ssh
+
+! LOOPBACK
+interface Loopback0
+ ip address 1.1.1.1 255.255.255.255
+ ip router isis
+
+! CORE LINKS
+interface GigabitEthernet2/0
+ ip address 10.0.12.1 255.255.255.0
+ ip router isis
+ mpls ip
+ no shutdown
+
+interface GigabitEthernet3/0
+ ip address 10.0.41.1 255.255.255.0
+ ip router isis
+ mpls ip
+ no shutdown
+
+! MANAGEMENT
+interface GigabitEthernet4/0
+ ip address 192.168.95.11 255.255.255.0
+ no shutdown
+
+ip route 0.0.0.0 0.0.0.0 192.168.95.1
+
+router isis
+ net 49.0001.0000.0000.0001.00
+ is-type level-2-only
+ metric-style wide
+
+mpls label protocol ldp
+mpls ldp router-id Loopback0 force
