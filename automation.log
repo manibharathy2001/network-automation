@@ -1,0 +1,152 @@
+2026-03-30 17:54:17,147 - INFO - === FULL AUTOMATION STARTED ===
+2026-03-30 17:54:17,147 - INFO - Running precheck.py
+2026-03-30 17:54:22,162 - INFO - Precheck started for R1
+2026-03-30 17:54:22,196 - INFO - Connected (version 2.0, client Cisco-1.25)
+2026-03-30 17:54:23,065 - INFO - Authentication (password) successful!
+2026-03-30 17:54:23,378 - INFO - Connected to R1
+2026-03-30 17:54:23,378 - INFO - Running 'show ip interface brief' on R1
+2026-03-30 17:54:23,508 - INFO - Running 'show ip route' on R1
+2026-03-30 17:54:23,630 - INFO - Running 'show isis neighbor' on R1
+2026-03-30 17:54:23,753 - INFO - Running 'show mpls ldp neighbor' on R1
+2026-03-30 17:54:23,900 - INFO - Precheck commands completed for R1
+2026-03-30 17:54:25,255 - INFO - Running config saved for R1
+2026-03-30 17:54:25,325 - INFO - Precheck started for R2
+2026-03-30 17:54:25,382 - INFO - Connected (version 2.0, client Cisco-1.25)
+2026-03-30 17:54:26,141 - INFO - Authentication (password) successful!
+2026-03-30 17:54:26,471 - INFO - Connected to R2
+2026-03-30 17:54:26,472 - INFO - Running 'show ip interface brief' on R2
+2026-03-30 17:54:26,642 - INFO - Running 'show ip route' on R2
+2026-03-30 17:54:26,813 - INFO - Running 'show isis neighbor' on R2
+2026-03-30 17:54:26,949 - INFO - Running 'show mpls ldp neighbor' on R2
+2026-03-30 17:54:27,320 - INFO - Precheck commands completed for R2
+2026-03-30 17:54:29,122 - INFO - Running config saved for R2
+2026-03-30 17:54:29,189 - INFO - Precheck started for R3
+2026-03-30 17:54:29,250 - INFO - Connected (version 2.0, client Cisco-1.25)
+2026-03-30 17:54:30,080 - INFO - Authentication (password) successful!
+2026-03-30 17:54:30,413 - INFO - Connected to R3
+2026-03-30 17:54:30,414 - INFO - Running 'show ip interface brief' on R3
+2026-03-30 17:54:30,602 - INFO - Running 'show ip route' on R3
+2026-03-30 17:54:30,888 - INFO - Running 'show isis neighbor' on R3
+2026-03-30 17:54:31,054 - INFO - Running 'show mpls ldp neighbor' on R3
+2026-03-30 17:54:31,227 - INFO - Precheck commands completed for R3
+2026-03-30 17:54:32,638 - INFO - Running config saved for R3
+2026-03-30 17:54:32,690 - INFO - Precheck started for R4
+2026-03-30 17:54:32,805 - INFO - Connected (version 2.0, client Cisco-1.25)
+2026-03-30 17:54:33,797 - INFO - Authentication (password) successful!
+2026-03-30 17:54:34,094 - INFO - Connected to R4
+2026-03-30 17:54:34,095 - INFO - Running 'show ip interface brief' on R4
+2026-03-30 17:54:34,296 - INFO - Running 'show ip route' on R4
+2026-03-30 17:54:34,486 - INFO - Running 'show isis neighbor' on R4
+2026-03-30 17:54:34,652 - INFO - Running 'show mpls ldp neighbor' on R4
+2026-03-30 17:54:34,846 - INFO - Precheck commands completed for R4
+2026-03-30 17:54:36,216 - INFO - Running config saved for R4
+2026-03-30 17:54:36,378 - INFO - Running deploy.py
+2026-03-30 17:54:41,027 - INFO - Deploy started for R1
+2026-03-30 17:54:41,092 - INFO - Connected (version 2.0, client Cisco-1.25)
+2026-03-30 17:54:41,946 - INFO - Authentication (password) successful!
+2026-03-30 17:54:43,210 - INFO - Connected to R1
+2026-03-30 17:54:45,348 - INFO - Config pushed successfully on R1
+2026-03-30 17:54:47,599 - INFO - Configuration saved on R1
+2026-03-30 17:54:48,985 - INFO - Disconnected from R1
+2026-03-30 17:54:48,986 - INFO - Deploy started for R2
+2026-03-30 17:54:49,009 - INFO - Connected (version 2.0, client Cisco-1.25)
+2026-03-30 17:54:49,735 - INFO - Authentication (password) successful!
+2026-03-30 17:54:50,860 - INFO - Connected to R2
+2026-03-30 17:54:52,313 - INFO - Config pushed successfully on R2
+2026-03-30 17:54:54,530 - INFO - Configuration saved on R2
+2026-03-30 17:54:55,883 - INFO - Disconnected from R2
+2026-03-30 17:54:55,883 - INFO - Deploy started for R3
+2026-03-30 17:54:55,934 - INFO - Connected (version 2.0, client Cisco-1.25)
+2026-03-30 17:54:56,671 - INFO - Authentication (password) successful!
+2026-03-30 17:54:57,858 - INFO - Connected to R3
+2026-03-30 17:54:59,367 - INFO - Config pushed successfully on R3
+2026-03-30 17:55:01,685 - INFO - Configuration saved on R3
+2026-03-30 17:55:03,865 - INFO - Disconnected from R3
+2026-03-30 17:55:03,865 - INFO - Deploy started for R4
+2026-03-30 17:55:03,911 - INFO - Connected (version 2.0, client Cisco-1.25)
+2026-03-30 17:55:04,526 - INFO - Authentication (password) successful!
+2026-03-30 17:55:05,648 - INFO - Connected to R4
+2026-03-30 17:55:07,044 - INFO - Config pushed successfully on R4
+2026-03-30 17:55:09,286 - INFO - Configuration saved on R4
+2026-03-30 17:55:10,655 - INFO - Disconnected from R4
+2026-03-30 17:55:10,838 - INFO - Running postcheck.py
+2026-03-30 17:55:16,852 - INFO - Postcheck started for R1
+2026-03-30 17:55:16,973 - INFO - Connected (version 2.0, client Cisco-1.25)
+2026-03-30 17:55:18,074 - INFO - Authentication (password) successful!
+2026-03-30 17:55:18,421 - INFO - Connected to R1
+2026-03-30 17:55:18,421 - INFO - Running 'show ip route' on R1
+2026-03-30 17:55:18,531 - INFO - Running 'show isis neighbor' on R1
+2026-03-30 17:55:18,682 - INFO - Running 'show mpls ldp neighbor' on R1
+2026-03-30 17:55:18,853 - INFO - Postcheck commands completed for R1
+2026-03-30 17:55:21,323 - INFO - Post running-config saved for R1
+2026-03-30 17:55:21,361 - INFO - Postcheck started for R2
+2026-03-30 17:55:21,421 - INFO - Connected (version 2.0, client Cisco-1.25)
+2026-03-30 17:55:22,221 - INFO - Authentication (password) successful!
+2026-03-30 17:55:22,541 - INFO - Connected to R2
+2026-03-30 17:55:22,542 - INFO - Running 'show ip route' on R2
+2026-03-30 17:55:22,837 - INFO - Running 'show isis neighbor' on R2
+2026-03-30 17:55:23,051 - INFO - Running 'show mpls ldp neighbor' on R2
+2026-03-30 17:55:23,391 - INFO - Postcheck commands completed for R2
+2026-03-30 17:55:25,617 - INFO - Post running-config saved for R2
+2026-03-30 17:55:25,658 - INFO - Postcheck started for R3
+2026-03-30 17:55:25,716 - INFO - Connected (version 2.0, client Cisco-1.25)
+2026-03-30 17:55:26,834 - INFO - Authentication (password) successful!
+2026-03-30 17:55:27,240 - INFO - Connected to R3
+2026-03-30 17:55:27,241 - INFO - Running 'show ip route' on R3
+2026-03-30 17:55:27,442 - INFO - Running 'show isis neighbor' on R3
+2026-03-30 17:55:27,678 - INFO - Running 'show mpls ldp neighbor' on R3
+2026-03-30 17:55:27,955 - INFO - Postcheck commands completed for R3
+2026-03-30 17:55:31,329 - INFO - Post running-config saved for R3
+2026-03-30 17:55:31,403 - INFO - Postcheck started for R4
+2026-03-30 17:55:31,511 - INFO - Connected (version 2.0, client Cisco-1.25)
+2026-03-30 17:55:32,621 - INFO - Authentication (password) successful!
+2026-03-30 17:55:33,000 - INFO - Connected to R4
+2026-03-30 17:55:33,001 - INFO - Running 'show ip route' on R4
+2026-03-30 17:55:33,141 - INFO - Running 'show isis neighbor' on R4
+2026-03-30 17:55:33,396 - INFO - Running 'show mpls ldp neighbor' on R4
+2026-03-30 17:55:33,551 - INFO - Postcheck commands completed for R4
+2026-03-30 17:55:35,957 - INFO - Post running-config saved for R4
+2026-03-30 17:55:36,171 - INFO - Running validation.py
+2026-03-30 17:55:40,309 - INFO - Validation started for R1
+2026-03-30 17:55:40,357 - INFO - Connected (version 2.0, client Cisco-1.25)
+2026-03-30 17:55:41,087 - INFO - Authentication (password) successful!
+2026-03-30 17:55:42,185 - INFO - Connected to R1
+2026-03-30 17:55:44,582 - INFO - R1 ISIS OK: True
+2026-03-30 17:55:44,583 - INFO - R1 ROUTE OK: True
+2026-03-30 17:55:44,583 - INFO - R1 MPLS OK: True
+2026-03-30 17:55:44,583 - INFO - R1 HEALTHY \u2705
+2026-03-30 17:55:44,616 - INFO - Validation started for R2
+2026-03-30 17:55:44,654 - INFO - Connected (version 2.0, client Cisco-1.25)
+2026-03-30 17:55:45,388 - INFO - Authentication (password) successful!
+2026-03-30 17:55:46,482 - INFO - Connected to R2
+2026-03-30 17:55:48,759 - INFO - R2 ISIS OK: True
+2026-03-30 17:55:48,759 - INFO - R2 ROUTE OK: True
+2026-03-30 17:55:48,759 - INFO - R2 MPLS OK: True
+2026-03-30 17:55:48,759 - INFO - R2 HEALTHY \u2705
+2026-03-30 17:55:48,776 - INFO - Validation started for R3
+2026-03-30 17:55:48,805 - INFO - Connected (version 2.0, client Cisco-1.25)
+2026-03-30 17:55:49,700 - INFO - Authentication (password) successful!
+2026-03-30 17:55:50,794 - INFO - Connected to R3
+2026-03-30 17:55:53,143 - INFO - R3 ISIS OK: True
+2026-03-30 17:55:53,143 - INFO - R3 ROUTE OK: True
+2026-03-30 17:55:53,144 - INFO - R3 MPLS OK: True
+2026-03-30 17:55:53,144 - INFO - R3 HEALTHY \u2705
+2026-03-30 17:55:53,226 - INFO - Validation started for R4
+2026-03-30 17:55:53,280 - INFO - Connected (version 2.0, client Cisco-1.25)
+2026-03-30 17:55:54,129 - INFO - Authentication (password) successful!
+2026-03-30 17:55:55,427 - INFO - Connected to R4
+2026-03-30 17:55:57,852 - INFO - R4 ISIS OK: True
+2026-03-30 17:55:57,852 - INFO - R4 ROUTE OK: True
+2026-03-30 17:55:57,852 - INFO - R4 MPLS OK: True
+2026-03-30 17:55:57,853 - INFO - R4 HEALTHY \u2705
+2026-03-30 17:55:57,900 - INFO - Validation successful. No rollback required.
+2026-03-30 17:55:58,085 - INFO - Running comparison.py
+2026-03-30 17:55:59,012 - INFO - Comparison started for R1
+2026-03-30 17:55:59,093 - INFO - Diff report created for R1 \u2192 reports/R1_diff.txt
+2026-03-30 17:55:59,093 - INFO - Comparison started for R2
+2026-03-30 17:55:59,151 - INFO - Diff report created for R2 \u2192 reports/R2_diff.txt
+2026-03-30 17:55:59,151 - INFO - Comparison started for R3
+2026-03-30 17:55:59,210 - INFO - Diff report created for R3 \u2192 reports/R3_diff.txt
+2026-03-30 17:55:59,210 - INFO - Comparison started for R4
+2026-03-30 17:55:59,263 - INFO - Diff report created for R4 \u2192 reports/R4_diff.txt
+2026-03-30 17:55:59,318 - INFO - === FULL AUTOMATION COMPLETED SUCCESSFULLY ===

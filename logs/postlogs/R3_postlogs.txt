@@ -13,20 +13,20 @@ Gateway of last resort is 192.168.95.1 to network 0.0.0.0
 
 S*    0.0.0.0/0 [1/0] via 192.168.95.1
       1.0.0.0/32 is subnetted, 1 subnets
-i L2     1.1.1.1 [115/70] via 10.0.34.1, 00:04:52, GigabitEthernet3/0
+i L2     1.1.1.1 [115/70] via 10.0.34.1, 00:00:20, GigabitEthernet3/0
       2.0.0.0/32 is subnetted, 1 subnets
-i L2     2.2.2.2 [115/60] via 10.0.23.1, 00:04:52, GigabitEthernet2/0
+i L2     2.2.2.2 [115/60] via 10.0.23.1, 00:00:20, GigabitEthernet2/0
       3.0.0.0/32 is subnetted, 1 subnets
 C        3.3.3.3 is directly connected, Loopback0
       4.0.0.0/32 is subnetted, 1 subnets
-i L2     4.4.4.4 [115/20] via 10.0.34.1, 00:20:50, GigabitEthernet3/0
+i L2     4.4.4.4 [115/20] via 10.0.34.1, 00:08:18, GigabitEthernet3/0
       10.0.0.0/8 is variably subnetted, 6 subnets, 2 masks
-i L2     10.0.12.0/24 [115/100] via 10.0.23.1, 00:04:52, GigabitEthernet2/0
+i L2     10.0.12.0/24 [115/100] via 10.0.23.1, 00:00:20, GigabitEthernet2/0
 C        10.0.23.0/24 is directly connected, GigabitEthernet2/0
 L        10.0.23.2/32 is directly connected, GigabitEthernet2/0
 C        10.0.34.0/24 is directly connected, GigabitEthernet3/0
 L        10.0.34.2/32 is directly connected, GigabitEthernet3/0
-i L2     10.0.41.0/24 [115/60] via 10.0.34.1, 00:04:52, GigabitEthernet3/0
+i L2     10.0.41.0/24 [115/60] via 10.0.34.1, 00:00:20, GigabitEthernet3/0
       192.168.95.0/24 is variably subnetted, 2 subnets, 2 masks
 C        192.168.95.0/24 is directly connected, GigabitEthernet4/0
 L        192.168.95.13/32 is directly connected, GigabitEthernet4/0
@@ -34,23 +34,23 @@ L        192.168.95.13/32 is directly connected, GigabitEthernet4/0
 ===== show isis neighbor =====
 
 System Id      Type Interface   IP Address      State Holdtime Circuit Id
-R2             L2   Gi2/0       10.0.23.1       UP    29       R3.01              
-R4             L2   Gi3/0       10.0.34.1       UP    9        R4.01              
+R2             L2   Gi2/0       10.0.23.1       UP    22       R3.01              
+R4             L2   Gi3/0       10.0.34.1       UP    7        R4.01              
 
 ===== show mpls ldp neighbor =====
-    Peer LDP Ident: 2.2.2.2:0; Local LDP Ident 3.3.3.3:0
-	TCP connection: 2.2.2.2.646 - 3.3.3.3.60750
-	State: Oper; Msgs sent/rcvd: 36/37; Downstream
-	Up time: 00:20:37
-	LDP discovery sources:
-	  GigabitEthernet2/0, Src IP addr: 10.0.23.1
-        Addresses bound to peer LDP Ident:
-          10.0.12.2       2.2.2.2         10.0.23.1       192.168.95.12   
     Peer LDP Ident: 4.4.4.4:0; Local LDP Ident 3.3.3.3:0
-	TCP connection: 4.4.4.4.18889 - 3.3.3.3.646
-	State: Oper; Msgs sent/rcvd: 36/35; Downstream
-	Up time: 00:20:37
+	TCP connection: 4.4.4.4.40096 - 3.3.3.3.646
+	State: Oper; Msgs sent/rcvd: 22/22; Downstream
+	Up time: 00:08:16
 	LDP discovery sources:
 	  GigabitEthernet3/0, Src IP addr: 10.0.34.1
         Addresses bound to peer LDP Ident:
           10.0.34.1       4.4.4.4         10.0.41.2       192.168.95.14   
+    Peer LDP Ident: 2.2.2.2:0; Local LDP Ident 3.3.3.3:0
+	TCP connection: 2.2.2.2.646 - 3.3.3.3.50274
+	State: Oper; Msgs sent/rcvd: 22/22; Downstream
+	Up time: 00:08:15
+	LDP discovery sources:
+	  GigabitEthernet2/0, Src IP addr: 10.0.23.1
+        Addresses bound to peer LDP Ident:
+          10.0.12.2       2.2.2.2         10.0.23.1       192.168.95.12   

@@ -25,17 +25,17 @@ S*    0.0.0.0/0 [1/0] via 192.168.95.1
       1.0.0.0/32 is subnetted, 1 subnets
 C        1.1.1.1 is directly connected, Loopback0
       2.0.0.0/32 is subnetted, 1 subnets
-i L2     2.2.2.2 [115/20] via 10.0.12.2, 00:13:12, GigabitEthernet2/0
+i L2     2.2.2.2 [115/20] via 10.0.12.2, 00:05:24, GigabitEthernet2/0
       3.0.0.0/32 is subnetted, 1 subnets
-i L2     3.3.3.3 [115/30] via 10.0.41.2, 00:13:02, GigabitEthernet3/0
-                 [115/30] via 10.0.12.2, 00:13:02, GigabitEthernet2/0
+i L2     3.3.3.3 [115/30] via 10.0.41.2, 00:05:24, GigabitEthernet3/0
+                 [115/30] via 10.0.12.2, 00:05:24, GigabitEthernet2/0
       4.0.0.0/32 is subnetted, 1 subnets
-i L2     4.4.4.4 [115/20] via 10.0.41.2, 00:13:12, GigabitEthernet3/0
+i L2     4.4.4.4 [115/20] via 10.0.41.2, 00:07:16, GigabitEthernet3/0
       10.0.0.0/8 is variably subnetted, 6 subnets, 2 masks
 C        10.0.12.0/24 is directly connected, GigabitEthernet2/0
 L        10.0.12.1/32 is directly connected, GigabitEthernet2/0
-i L2     10.0.23.0/24 [115/20] via 10.0.12.2, 00:13:12, GigabitEthernet2/0
-i L2     10.0.34.0/24 [115/20] via 10.0.41.2, 00:13:12, GigabitEthernet3/0
+i L2     10.0.23.0/24 [115/20] via 10.0.12.2, 00:05:24, GigabitEthernet2/0
+i L2     10.0.34.0/24 [115/20] via 10.0.41.2, 00:07:16, GigabitEthernet3/0
 C        10.0.41.0/24 is directly connected, GigabitEthernet3/0
 L        10.0.41.1/32 is directly connected, GigabitEthernet3/0
       192.168.95.0/24 is variably subnetted, 2 subnets, 2 masks
@@ -45,23 +45,23 @@ L        192.168.95.11/32 is directly connected, GigabitEthernet4/0
 ===== show isis neighbor =====
 
 System Id      Type Interface   IP Address      State Holdtime Circuit Id
-R2             L2   Gi2/0       10.0.12.2       UP    9        R2.01              
+R2             L2   Gi2/0       10.0.12.2       UP    8        R2.01              
 R4             L2   Gi3/0       10.0.41.2       UP    7        R4.02              
 
 ===== show mpls ldp neighbor =====
-    Peer LDP Ident: 4.4.4.4:0; Local LDP Ident 1.1.1.1:0
-	TCP connection: 4.4.4.4.64830 - 1.1.1.1.646
-	State: Oper; Msgs sent/rcvd: 28/27; Downstream
-	Up time: 00:12:59
-	LDP discovery sources:
-	  GigabitEthernet3/0, Src IP addr: 10.0.41.2
-        Addresses bound to peer LDP Ident:
-          10.0.34.1       4.4.4.4         10.0.41.2       192.168.95.14   
     Peer LDP Ident: 2.2.2.2:0; Local LDP Ident 1.1.1.1:0
-	TCP connection: 2.2.2.2.33608 - 1.1.1.1.646
-	State: Oper; Msgs sent/rcvd: 27/27; Downstream
-	Up time: 00:12:58
+	TCP connection: 2.2.2.2.42956 - 1.1.1.1.646
+	State: Oper; Msgs sent/rcvd: 21/21; Downstream
+	Up time: 00:07:11
 	LDP discovery sources:
 	  GigabitEthernet2/0, Src IP addr: 10.0.12.2
         Addresses bound to peer LDP Ident:
           10.0.12.2       2.2.2.2         10.0.23.1       192.168.95.12   
+    Peer LDP Ident: 4.4.4.4:0; Local LDP Ident 1.1.1.1:0
+	TCP connection: 4.4.4.4.23487 - 1.1.1.1.646
+	State: Oper; Msgs sent/rcvd: 21/21; Downstream
+	Up time: 00:07:11
+	LDP discovery sources:
+	  GigabitEthernet3/0, Src IP addr: 10.0.41.2
+        Addresses bound to peer LDP Ident:
+          10.0.34.1       4.4.4.4         10.0.41.2       192.168.95.14   
